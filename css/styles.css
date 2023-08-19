@@ -1,3 +1,13 @@
+/* CUSTOM PROPS */
+:root {
+    --body-bg: #f1f4ff;
+    --green: #4dc490;
+    --purple: #655af2;
+    --red: #f03535;
+    --text-color: #000;
+}
+
+
 /* GLOBAL STYLES */
 html {
     height: 100%;
@@ -19,8 +29,8 @@ body {
     margin: 0;
     font-size: 16px;
     font-family: "Inter", "Arial", sans-serif;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--body-bg);
+    color: var(--text-color);
 }
 
 img {
@@ -43,18 +53,20 @@ img {
 /* MAIN-CONTENT */
 main {
     flex-grow: 1;
+    padding-top: 80px;
 }
 
 .main-content-container {
     display: flex;
     align-content: center;
     justify-content: space-between;
-    padding-top: 80px;
 }
 
 
 /* CONTENT-LEFT */
 .content-left-wrapper {
+    display: flex;
+    flex-direction: column;
     width: 570px;
     margin-right: 12px;
     border-radius: 20px;
@@ -66,6 +78,7 @@ main {
 .content-left {
     padding-top: 55px;
     padding-left: 60px;
+    flex-grow: 1;
 }
 
 .content-left-theme {
@@ -102,7 +115,7 @@ main {
 }
 
 .content-left-bottom {
-    padding: 20px 130px;
+    padding: 28px;
     border-radius: 0 0 20px 20px;
     background-color: #4DC490;
 }
